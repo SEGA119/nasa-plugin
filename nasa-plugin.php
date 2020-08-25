@@ -26,7 +26,7 @@ define( 'NASA__PLUGIN_VIEW', NASA__PLUGIN_DIR . '/views/' );
  * Register base plugin hooks
  */
 register_activation_hook( __FILE__, array( 'NasaPlugin\Plugin', 'activation' ) );
-register_deactivation_hook( __FILE__, array( 'NasaPlugin\Plugin', 'uninstall' ) );
+register_deactivation_hook( __FILE__, array( 'NasaPlugin\Plugin', 'deactivation' ) );
 register_uninstall_hook( __FILE__, array( 'NasaPlugin\Plugin', 'uninstall' )  );
 
 /**
